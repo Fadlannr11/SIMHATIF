@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/latar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50px"
+        android:text="SIMHATIF"
+        android:textSize="40dp"
+        android:fontFamily="@font/font_header"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/kotak__isi"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_dongle"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textSize="45dp" />
+
+            <EditText
+                android:id="@+id/etnim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kotak_input"
+                android:drawableLeft="@drawable/user"
+                android:fontFamily="@font/font_dongle"
+                android:gravity="center"
+                android:hint="NIM"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kotak_input"
+                android:drawableLeft="@drawable/lock"
+                android:fontFamily="@font/font_dongle"
+                android:gravity="center"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font_dongle"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lupapassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/font_dongle"
+                android:gravity="center"
+                android:text="Lupa Password"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/Loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:backgroundTint="@color/purple"
+                android:text="Login"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

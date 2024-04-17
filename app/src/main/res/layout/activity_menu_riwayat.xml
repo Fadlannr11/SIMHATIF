@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".menu_riwayat">
+    <RelativeLayout
+        android:id="@+id/gheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="3dp"
+            android:text="SIMHATIF"
+            android:textSize="30dp"
+            android:fontFamily="@font/font_header"
+            />
+
+        <ImageView
+            android:id="@+id/prsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:id="@+id/identitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_marginLeft="5dp"
+            android:text="Fadlan Nur Ramadhan"
+            android:textSize="13dp"
+            android:fontFamily="@font/font_header"/>
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_below="@id/identitas"
+            android:layout_marginLeft="6dp"
+            android:text="12250113820"
+            android:textSize="8dp"
+            android:fontFamily="@font/font_header"
+            />
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_below="@id/nim"
+            android:layout_marginLeft="5dp"
+            android:text="Tahun Akademik 2023/2024"
+            android:textSize="10dp"
+            android:fontFamily="@font/font_header"
+            />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gheader"
+        android:layout_marginTop="20dp"
+        android:padding="5dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No."
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tgl Setoran"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surah"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mulai ayat"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sampai ayat"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ket"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07-11-2022"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An-naba'"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="selesai"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07-11-2022"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An-naba'"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="belum"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/garis"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="83dp"
+        android:alpha="0.5"
+        android:text="copyright © 2024 by SIMHATIF"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bar_menu">
+
+        <ImageButton
+            android:id="@+id/ibberanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:backgroundTint="#00000000"/>
+
+        <ImageButton
+            android:id="@+id/ibsetoran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/task_list"
+            android:backgroundTint="#00000000"/>
+
+        <ImageButton
+            android:id="@+id/ibriwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/paper"
+            android:backgroundTint="#00000000" />
+
+    </RelativeLayout>
+</RelativeLayout>

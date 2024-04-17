@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".menu_setoran">
+
+    <RelativeLayout
+        android:id="@+id/gheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="3dp"
+            android:text="SIMHATIF"
+            android:textSize="30dp"
+            android:fontFamily="@font/font_header"
+            />
+
+        <ImageView
+            android:id="@+id/prsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:id="@+id/identitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_marginLeft="5dp"
+            android:text="Fadlan Nur Ramadhan"
+            android:textSize="13dp"
+            android:fontFamily="@font/font_header"/>
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_below="@id/identitas"
+            android:layout_marginLeft="6dp"
+            android:text="12250113820"
+            android:textSize="8dp"
+            android:fontFamily="@font/font_header"
+            />
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/prsn"
+            android:layout_below="@id/nim"
+            android:layout_marginLeft="5dp"
+            android:text="Tahun Akademik 2023/2024"
+            android:textSize="10dp"
+            android:fontFamily="@font/font_header"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gheader"
+        android:layout_marginTop="25dp"
+        >
+        <Button
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Download"
+            android:fontFamily="@font/font_dongle"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/baseline_download_24">
+
+        </Button>
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/tdown"
+        android:paddingLeft="20dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No."
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surah"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanda Tangan"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:background="@drawable/garis"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An-naba'"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerja Praktek"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An-nazi'at'"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerja Praktek"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/garis"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:id="@+id/jgrafik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/kp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_dongle"
+                android:text="Keja Praktek"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/skp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kp"
+                android:fontFamily="@font/font_dongle"
+                android:text="Seminar KP"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skp"
+                android:fontFamily="@font/font_dongle"
+                android:text="Seminar Proposal"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/sidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp"
+                android:fontFamily="@font/font_dongle"
+                android:text="Sidang Akhir"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grafik"
+            android:layout_width="wrap_content"
+            android:layout_height="159dp"
+            android:padding="5dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="243dp"
+                android:layout_height="40dp"
+                android:indeterminateOnly="false"
+                android:progress="40"
+                android:progressTint="@color/purple" />
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="233dp"
+                android:layout_height="43dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="75dp"
+                android:progress="30"
+                android:progressTint="@color/purple" />
+
+            <ProgressBar
+                android:id="@+id/progressBar5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="238dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="78dp"
+                android:layout_marginBottom="41dp"
+                android:progress="20"
+                android:progressTint="@color/purple" />
+
+            <ProgressBar
+                android:id="@+id/progressBar6"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="238dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="113dp"
+                android:layout_marginBottom="3dp"
+                android:progress="10"
+                android:progressTint="@color/purple" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="83dp"
+        android:alpha="0.5"
+        android:text="copyright © 2024 by SIMHATIF"
+        />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bar_menu">
+
+        <ImageButton
+            android:id="@+id/ibberanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/ibsetoran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/task_list" />
+
+        <ImageButton
+            android:id="@+id/ibriwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/paper" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
